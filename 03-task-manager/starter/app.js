@@ -1,3 +1,4 @@
+require('./db/connect');
 const express = require('express');
 const app = express();
 const tasks = require('./routes/tasks');
@@ -5,7 +6,7 @@ const tasks = require('./routes/tasks');
 //middleware
 app.use(express.json());
 
-app.get('/hello', (req, res)=>{
+app.get('/hello', (req, res) => {
     res.send('Dingus');
 })
 

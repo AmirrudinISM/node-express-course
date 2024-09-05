@@ -1,9 +1,15 @@
 const getAllTasks = (req, res) => {
-    res.send('all items, my dude');
+    res.json({
+        "status": "GET Success",
+        "message": "All posts, my guy"
+    });
 }
 
 const createTask = (req, res) => {
-    res.send('task created, my guy');
+    res.json({
+        "status": "POST Success",
+        "message": "Task created, my guy"
+    });
 }
 
 const getTask = (req, res) => {
